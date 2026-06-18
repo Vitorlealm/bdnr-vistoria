@@ -2,10 +2,6 @@
 
 const { client } = require('./config/dgraph');
 
-/**
- * Schema DQL do banco (conforme fornecido). As entidades são distinguidas
- * em tempo de aplicação pelo predicado `tipo` (agente | cliente | veiculo | vistoria).
- */
 const SCHEMA = `
 nome: string @index(term) .
 email: string @index(exact) .
@@ -25,9 +21,6 @@ agente: uid @reverse .
 veiculo: uid @reverse .
 `;
 
-/**
- * Aplica o schema no Dgraph via /alter.
- */
 async function applySchema() {
   await client.alter({ schema: SCHEMA });
 }

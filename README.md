@@ -42,7 +42,7 @@ cp .env.example .env   # ajuste DGRAPH_URL/PORT se necessário
 
 `.env`:
 ```
-DGRAPH_URL=http://localhost:8080
+DGRAPH_URL=http://localhost:8090
 PORT=3000
 ```
 

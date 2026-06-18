@@ -1,6 +1,6 @@
 # bdnr-vistoria
 
-API REST de **gerenciamento de vistorias veiculares** construída com **Node.js + Express** e persistência em **Dgraph** (endpoint HTTP, porta `8080`).
+API REST de **gerenciamento de vistorias veiculares** construída com **Node.js + Express** e persistência em **Dgraph** (endpoint HTTP, porta `8090`).
 
 Faz o CRUD completo de quatro entidades — **agentes de vistoria, clientes, veículos e vistorias** — além de consultas de relacionamento que aproveitam os índices reversos (`@reverse`) do grafo.
 
